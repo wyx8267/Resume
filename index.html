@@ -6,38 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>我的简历</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="//at.alicdn.com/t/font_1270182_qjsgcu927we.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <div class="topNavBar clearfix">
-        <a href="#" class="logo" alt="logo">
-            <span class="rs">RS</span><span class="card">card</span>
-        </a>
-        
-        <nav>
-            <ul class="clearfix">
-                <li><a href="#">关于</a></li>
-                <li><a href="#">技能</a></li>
-                <li><a href="#">作品</a></li>
-                <li><a href="#">博客</a></li>
-                <li><a href="#">日历</a></li>
-                <li><a href="#">联系方式</a></li>
-                <li><a href="#">其他</a></li>
-            </ul>
-        </nav>
+    <div class="topNavBar">
+        <div class="topNavBar-inner clearfix">
+            <a href="#" class="logo" alt="logo">
+                <span class="rs">RS</span><span class="card">card</span>
+            </a>
+
+            <nav>
+                <ul class="clearfix">
+                    <li><a href="#">关于</a></li>
+                    <li><a href="#">技能</a></li>
+                    <li><a href="#">作品</a></li>
+                    <li><a href="#">博客</a></li>
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
+            </nav>
     </div>
+        </div>
+        
 
     <div class="banner">
+        <div class="mask"></div>
     </div>
 
     <main>
-        <div class="card">
-            <div class="picture">
-                <img src="" alt="头像">
-            </div>
-            <div class="text">
-                <div class="profile">
-                    <span class="welcome">Hello</span>
-                    <h1>fang</h1>
+        <div class="userCard">
+            <div class="pictureAndText clearfix">
+                <div class="picture">
+                    <img src="./img/avatar.jpg" alt="头像">
+                </div>
+                <div class="text">
+                    <span class="welcome">Hello
+                        <span class="triangle"></span>
+                    </span>
+                    <h1>Fang</h1>
                     <p>前端开发工程师</p>
                     <hr>
                     <dl>
@@ -51,16 +67,29 @@
                         <dd>17512345678</dd>
                     </dl>
                 </div>
-                <footer class="media">
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                </footer>
             </div>
+            <footer class="media">
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weixin"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                </a>
+            </footer>
         </div>
 
         <a href="#" class="button">下载 PDF 简历</a>
