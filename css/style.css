@@ -38,6 +38,25 @@ h6 {
     clear: both;
 }
 
+[data-x].offset {
+    transform: translateY(100px);
+}
+
+[data-x] {
+    transform: translateY(0);
+    transition: all 0.5s;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .topNavBar {
     padding: 20px 0 12px 0;
     position: fixed;
@@ -109,15 +128,16 @@ h6 {
     position: relative;
 }
 
-.topNavBar nav>ul>li.active>a::after {
+.topNavBar nav>ul>li.active>a::after,
+.topNavBar nav>ul>li.highlight>a::after {
     content: '';
     display: block;
     position: absolute;
-    background: #e06567;
     top: 100%;
-    width: 100%;
-    height: 3px;
     left: 0;
+    width: 100%;
+    background: #e06567;
+    height: 3px;
     animation: menuSlide .3s;
 }
 
