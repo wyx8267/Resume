@@ -1,13 +1,3 @@
-document.getElementById('portfolioAll').onclick = function () {
-    portfolioBar.className = 'bar state-1'
-}
-document.getElementById('portfolioFramework').onclick = function () {
-    portfolioBar.className = 'bar state-2'
-}
-document.getElementById('portfolioVallina').onclick = function () {
-    portfolioBar.className = 'bar state-3'
-}
-
 window.onscroll = function (e) {
     if (window.scrollY > 30) {
         document.getElementById('topNavBar').classList.add('sticky')
@@ -96,3 +86,14 @@ function findClosest() {
     }
     li.classList.add('highlight')
 }
+
+var mySwiper = new Swiper('.swiper-container', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+})
