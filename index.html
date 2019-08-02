@@ -66,14 +66,6 @@
                 opacity: 0;
             }
         }
-
-        .icon {
-            width: 1em;
-            height: 1em;
-            vertical-align: -0.15em;
-            fill: currentColor;
-            overflow: hidden;
-        }
     </style>
 </head>
 
@@ -221,20 +213,27 @@
     </section>
     <section data-x class="portfolio" id="siteWorks">
         <h2>作品集</h2>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <img src="./img/canvas.jpg" class="swiper-slide">
-                <img src="./img/carousel.jpg" class="swiper-slide">
-                <img src="./img/keyboard.jpg" class="swiper-slide">
+
+        <div id="mySlides">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <img src="./img/canvas.jpg" class="swiper-slide">
+                    <img src="./img/carousel.jpg" class="swiper-slide">
+                    <img src="./img/keyboard.jpg" class="swiper-slide">
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/sticky-topbar.js"></script>
+    <script src="./js/auto-slide-up.js"></script>
+    <script src="./js/smooth-navigation.js"></script>
     <script>
         setTimeout(function () {
             siteWelcome.classList.remove('active')
